@@ -5,11 +5,11 @@ app = Flask(__name__)
 
 mysql = MySQL()
 
-# MySQL configurations
-app.config['MYSQL_DATABASE_USER'] = 'b45fc1daa17d12'
-app.config['MYSQL_DATABASE_PASSWORD'] = '910f54a1'
-app.config['MYSQL_DATABASE_DB'] = 'heroku_428b368c435e5d2'
-app.config['MYSQL_DATABASE_HOST'] = 'us-cdbr-iron-east-03.cleardb.net'
+# MySQL configurations  #### REVER trecho de configuração para buscar as informações
+app.config['MYSQL_DATABASE_USER'] = 'USER'
+app.config['MYSQL_DATABASE_PASSWORD'] = 'PASSWD'
+app.config['MYSQL_DATABASE_DB'] = 'DEFAULT_SCHEMA'
+app.config['MYSQL_DATABASE_HOST'] = 'HOST'
 mysql.init_app(app)
 
 
